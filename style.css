@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+/*----------------------------header---------------------------------*/
+.header{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    padding: 35px 12%;
+    background:rgb(161, 136, 127);
+    backdrop-filter: blur(10px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo{
+    font-size: 25px;
+    color:black;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color:rgb(160, 101, 30);
+    text-shadow: 0 0 25px rgb(160, 101, 30) ,
+                 0 0 50px rgb(160, 101, 30);
+    transform: scale(1.1);             
+}
+span{
+    color: rgb(205, 138, 45);
+}
+.navbar a{
+    font-size: 18px;
+    color: white;
+    font-weight: 700;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,.navbar a.active{
+    color: black;
+    border-bottom: 3px solid  rgb(216, 160, 87);
+    
+}
+.contact{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.contact:hover{
+    background-color:black;
+    box-shadow: 0 0 25px orange;
+    color:white;
+}
+.Download{
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.Download:hover{
+    background-color:black;
+    box-shadow: 0 0 25px orange;
+    color:white;
+}
+/*-------------------------------------Home section--------------------------------------------------------*/
+.Home{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.hcontent{
+    max-width: 800px;
+}
+.hcontent h3{
+    font-size: 40px;
+}
+.hcontent h1{
+    font-size: 60px;
+    line-height: 1.2;
+}
+.hcontent p{
+    font-size: 18px;
+    margin:25px 0 30px;
+}
+.btn-box{
+   width: 345px;
+   display: flex;
+   gap:2em;
+}
+.btn1{
+    padding: 15px 28px;
+    background-color: black;
+    color: aliceblue;
+    border-radius: 8px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+.btn1:hover{
+    background-color: aliceblue;
+    color: black;
+    border: 2px solid black;
+}
+.imge img{
+    border-radius: 40%;
+    width:400px;
+    height: 400px;
+    align-items: center;
+}
+::-webkit-scrollbar{
+    width:15px;
+}
+::-webkit-scrollbar-thumb{
+    background-color: bisque;
+}
+::-webkit-scrollbar-track{
+    background-color: rgb(155, 104, 104);
+}
+/*-----------------------------------------About section----------------------------------------------------------*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(251, 233, 231);
+    padding: 12% 8%;
+    gap: 10em;
+}
+.abimg img{
+    position: relative;
+    box-shadow: 0 0 25px rgb(255, 171, 145),
+                0 0 50px rgb(255, 171, 145);
+    width: 600px;
+    height: 600px;
+}
+.acont h2{
+    text-align: left;
+    color: rgb(93, 64, 55);
+    font-size: 50px;
+}
+.acont h3{
+    font-size: 40px;
+    color: rgb(205, 138, 45);
+}
+.acont p{
+    color:black;
+    margin:2em 0 3em;
+    font-size: 20px;
+}
+/*-----------------------------education---------------------------------------------------*/
+.ëducation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:rgb(188, 170, 164);
+    padding: 12% 8%;
+    gap: 10em;
+}
+.eduimg img{
+    position: relative;
+    box-shadow: 0 0 25px rgb(96, 125, 139),
+                0 0 50px rgb(96, 125, 139);
+    width: 400px;
+    height: 500px;
+    border-radius: 50%;
+}
+.educont h2{
+    text-align: left;
+    color:rgb(205, 138, 45);
+    font-size: 60px;
+    text-shadow: #310303;
+}
+.educont h3{
+    font-size: 20px;
+    color:rgb(251, 233, 231);
+}
+.educont ul{
+    color:black;
+    margin:1em 1em 1em;
+    font-size: 20px;
+}
+/*-------------------------------------------Skills----------------------------------------------------------*/
+.skills{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    gap: 7em;
+    padding: 30px 12% 0;
+}
+.sub{
+    padding: 2%;
+    height: 1000px;
+  }
+  
+  .sub h2{
+    margin-top: 100px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 50px;
+    color:rgb(48, 29, 2);
+  }
+.cards{
+    padding: 3%;
+    padding-left: 50px;
+    padding-right:50px;
+  }
+.column {
+    float: left;
+    width: 33.3%;
+    padding: 40px 18px;
+  }
+ .row {margin: 0 ;}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  @media screen and (max-width: 300px) {
+    .column {
+      width: 100%;
+      display: block;
+      margin-bottom: 20px;
+    }
+  }
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    text-align: center;
+    background-color: #f1f1f1;
+    border-radius: 40px;
+  }
+.card img{
+    border-radius: 40px;
+  }
+  .card:hover {
+    transform: scale(0.9, 0.9);
+    box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+      -5px -5px 30px 15px rgba(0,0,0,0.22);
+  }
+.card p{
+    margin-top: -100px;
+    margin-left: -10px;
+    font-size: 30px;
+    font-weight: 600;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
+    color:white;
+    align-items: center;
+  }
+  /*--------------------------------------------projects-------------------------------------------------------------------*/
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(251, 233, 231);
+    padding: 5% 5%;
+    gap: 10em;
+}
+.heading3{
+    margin-top: 50px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: black;
+}
+.pcards{
+    padding: 3%;
+    padding-left: 50px;
+    padding-right:50px;   
+}
+.ptitle{
+    color: black;
+    font-size: 30px;
+}
+.def{
+    color: black;
+    font-size: 10px;
+}
+.gcontact{
+    
+    padding: 10px 28px;
+    background-color: white;
+    color: black;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.gcontact:hover{
+    background-color:black;
+    box-shadow: 0 0 25px orange;
+    color:white;
+}
+/*---------------------------------------------contact--------------------------------------------------------------------*/
+.contact-form{
+    text-align: center;
+    margin-top: 3em;
+    margin-bottom: 1em;
+    font-size: 36px;
+}
+.contact-form form{
+    max-width: 50em;
+    margin:1rem auto;
+    text-align: center;
+    margin-bottom: 3em;
+}
+.contact-form form .input-box{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.contact-form form .input-box input ,
+.contact-form form textarea {
+    width: 90%;
+    padding: 1.5em;
+    font-size: 18px;
+    color: black;
+    background-color: blanchedalmond;
+    border-radius: .8rem;
+    margin: 1rem 0;
+    resize: none;
+}
+/*-----------------------------------------Footer-----------------------------------------------------------*/
+.footer{
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color:rgb(161, 136, 127);
+}
+.footer .social{
+    text-align: center;
+    padding-bottom: 25px;
+    color:rgb(255, 235, 238);
+}
+.footer .social a{
+    font-size: 24px;
+    color:black;
+    border: 2px solid orange;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px orangered,0 0 10px orangered;
+    transition: 0.3s ease;
+}
+.footer .social a:hover{
+    transform: scale(1.2)translateY(-10px);
+    color:bisque;
+    border: 2px solid orangered;
+    
+}
+.footer ul{
+    margin: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 0;
+    text-align: center;
+}
+.footer ul li a{
+    color: rgb(255, 235, 238);
+    border-bottom: 3px solid transparent;
+    transition:0.3s ease;
+}
+.footer ul li a:hover{
+    border-bottom: 3px solid orangered;
+
+}
+.footer ul li{
+    display: inline-block;
+    padding: 0 15px;
+}
+.footer .copyright{
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color:white;
+}
